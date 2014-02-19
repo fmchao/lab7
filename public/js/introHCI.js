@@ -8,6 +8,7 @@ $(document).ready(function() {
 /*
  * Function that is called when the document is ready.
  */
+
 function initializePage() {
 	$('.project a').click(function(e) {
 		// Prevent following the link
@@ -64,8 +65,8 @@ function initializePage() {
 		var date = $('#new-project-form #date').val();
 		var summary = $('#new-project-form #summary').val();
 		var json = {
-			'project_title': title,
-			'image_url': image_url,
+			'title': title,
+			'image': image_url,
 			'date':  date,
 			'summary': summary
 		};
